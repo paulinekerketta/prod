@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'pages/login'
 
-root 'pages#home'
+root 'dailycashes#index'
   resources :dailycashes
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
