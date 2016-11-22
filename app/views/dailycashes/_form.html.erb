@@ -1,0 +1,57 @@
+<%= form_for(dailycash) do |f| %>
+  <% if dailycash.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dailycash.errors.count, "error") %> prohibited this dailycash from being saved:</h2>
+
+      <ul>
+      <% dailycash.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.datetime_select :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sales %>
+    <%= f.number_field :sales %>
+  </div>
+
+  <div class="field">
+    <%= f.label :discount %>
+    <%= f.number_field :discount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :visa %>
+    <%= f.number_field :visa %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cashpurch %>
+    <%= f.number_field :cashpurch %>
+  </div>
+
+  <div class="field">
+    <%= f.label :onlineord %>
+    <%= f.number_field :onlineord %>
+  </div>
+
+  <div class="field">
+    <%= f.label :totdriverpay %>
+    <%= f.number_field :totdriverpay %>
+  </div>
+
+  <div class="field">
+    <%= f.label :banklodgement %>
+    <%= f.number_field :banklodgement %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
