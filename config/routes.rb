@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'pages/faq'
   
-  get 'pages/about'
+  #get 'pages/about'
   
   get 'pages/contact'
 
