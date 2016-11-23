@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get 'pages/features'
 
   get 'pages/faq'
-
+  
+  get 'pages/about'
+  
   get 'pages/contact'
 
   get 'pages/login'
